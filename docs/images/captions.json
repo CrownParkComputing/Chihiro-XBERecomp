@@ -1,0 +1,47 @@
+[
+  {
+    "file": "hotd3-linux.png",
+    "caption": "HOTD3 \u2014 current Linux intro sequence.",
+    "sha256": "dd54a6d2b01d2d430dec79d87a5e9259154258a6b0c8ae8b4bb7ebfd8dc44059"
+  },
+  {
+    "file": "outrun2-linux.png",
+    "caption": "OutRun 2 \u2014 an earlier native driving check.",
+    "sha256": "ae8987b9cd6995172be0f05bc5264c38933bb58ae40c56d397898355e840abc4"
+  },
+  {
+    "file": "vcop3-linux.png",
+    "caption": "Virtua Cop 3 \u2014 current Linux attract/title sequence.",
+    "sha256": "eb703ac9564760c56649e3b94b1ab86c4e47646b9a6c5120753cbad413b35c20"
+  },
+  {
+    "file": "vcop3-known-issue.png",
+    "caption": "Virtua Cop 3 \u2014 earlier mission capture showing the remaining limb/shield rendering issue. This scene has not been verified fixed.",
+    "sha256": "00a0837b72a031ecc9418f2b0b0639a2d49fc14ef1ceb813ab4ca91461344a56"
+  },
+  {
+    "file": "maximumtune1-retroid.png",
+    "caption": "Maximum Tune 1 \u2014 verified Android import launcher on Retroid. This is not an in-game rendering screenshot; the game currently has a black screen.",
+    "sha256": "48bd9b49d300b98b22f928ce1c1c2f0b1eda0d0ed7982732c2230bf153687048"
+  },
+  {
+    "file": "maximumtune2-retroid.png",
+    "caption": "Maximum Tune 2 \u2014 verified Android import launcher on Retroid. Racing is unavailable while the black-screen problem remains.",
+    "sha256": "33cd1c1943409a57e5cfefadbb69388bdfbbf0747ab25d3722190a8a75fcf042"
+  },
+  {
+    "file": "ghostsquad-retroid.png",
+    "caption": "Ghost Squad \u2014 current Retroid Pocket Flip2 attract sequence, with complete character arms and thighs.",
+    "sha256": "3426d46834f3c892792297da11dac5593f82771e690ec629f652f6000bf7e1a2"
+  },
+  {
+    "file": "ghostsquad-before.png",
+    "caption": "Ghost Squad \u2014 Linux before the skinning correction, with missing upper arms and thighs.",
+    "sha256": "c48806fbf07ddeb9d53c895789dbc9b91757d2d429509213e7f4f071655a8f74"
+  },
+  {
+    "file": "ghostsquad-after.png",
+    "caption": "Ghost Squad \u2014 Linux after the correction at approximately the same attract timing. Characters animate between captures; these are not identical frames.",
+    "sha256": "1b9b3e303ae839622056888c46c1022bbff6383cbf9fab6949b113b339c8fb84"
+  }
+]

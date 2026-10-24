@@ -1,0 +1,19 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {"major": 3, "minor": 25, "patch": 0},
+  "configurePresets": [
+    {
+      "name": "linux-release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/native",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "CMAKE_CXX_FLAGS": "-march=x86-64-v2"
+      }
+    }
+  ],
+  "buildPresets": [{"name": "linux-release", "configurePreset": "linux-release"}],
+  "testPresets": [{"name": "linux-release", "configurePreset": "linux-release", "output": {"outputOnFailure": true}}]
+}

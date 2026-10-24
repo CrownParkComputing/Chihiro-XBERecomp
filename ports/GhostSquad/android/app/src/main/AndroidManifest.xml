@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.vulkan.version" android:version="0x00401000" android:required="true" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.gamepad" android:required="false" />
+    <application android:label="Ghost Squad" android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen"
+        android:allowBackup="false" android:hardwareAccelerated="true"
+        android:enableOnBackInvokedCallback="false">
+        <meta-data android:name="org.xberecomp.GAME_XBE" android:value="vsg.xbe" />
+        <meta-data android:name="org.xberecomp.CONTROLS" android:value="gun-ghostsquad" />
+        <meta-data android:name="org.xberecomp.ARCHIVE" android:value="Ghost Squad.7z" />
+        <meta-data android:name="org.xberecomp.SHA256" android:value="e2f1b3d43eca6661880d81618519ff44f77a8cdafff825177041c8f0d699038e" />
+        <meta-data android:name="org.xberecomp.ARCHIVE_ROOT" android:value="false" />
+        <meta-data android:name="org.xberecomp.REQUIRED_PATHS" android:value="media" />
+        <meta-data android:name="SDL_ENV.XBE_CAPTURE_DIR" android:value="captures" />
+        <activity android:name="com.crownpark.ghostsquad.LauncherActivity" android:exported="true"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.crownpark.ghostsquad.GameActivity" android:exported="false"
+            android:screenOrientation="landscape" android:process=":game"
+            android:configChanges="layoutDirection|locale|fontScale|fontWeightAdjustment|orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation|density"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" />
+        <service android:name="org.xberecomp.GameSessionService" android:exported="false"
+            android:process=":game" android:stopWithTask="false" />
+    </application>
+</manifest>

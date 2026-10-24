@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.vulkan.version" android:version="0x00401000" android:required="true" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.gamepad" android:required="false" />
+    <application android:label="Wangan Midnight Maximum Tune" android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen"
+        android:allowBackup="false" android:hardwareAccelerated="true"
+        android:enableOnBackInvokedCallback="false">
+        <meta-data android:name="org.xberecomp.GAME_XBE" android:value="V307.xbe" />
+        <meta-data android:name="org.xberecomp.CONTROLS" android:value="driving" />
+        <meta-data android:name="org.xberecomp.ARCHIVE" android:value="Maximum Tune 1 (Export).7z" />
+        <meta-data android:name="org.xberecomp.SHA256" android:value="2d74371e5a0bb83a6b5185350792f7e3a4242076b62306fab103936ddd2dd760" />
+        <meta-data android:name="org.xberecomp.ARCHIVE_ROOT" android:value="true" />
+        <meta-data android:name="org.xberecomp.REQUIRED_PATHS" android:value="Data" />
+        <meta-data android:name="SDL_ENV.XBE_CAPTURE_DIR" android:value="captures" />
+        <activity android:name="com.crownpark.maximumtune1.LauncherActivity" android:exported="true"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.crownpark.maximumtune1.GameActivity" android:exported="false"
+            android:screenOrientation="landscape" android:process=":game"
+            android:configChanges="layoutDirection|locale|fontScale|fontWeightAdjustment|orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation|density"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" />
+        <service android:name="org.xberecomp.GameSessionService" android:exported="false"
+            android:process=":game" android:stopWithTask="false" />
+    </application>
+</manifest>

@@ -1,0 +1,23 @@
+{
+  "title": "Ghost Squad",
+  "archive": "Ghost Squad.7z",
+  "executable": "vsg.xbe",
+  "sha256": "e2f1b3d43eca6661880d81618519ff44f77a8cdafff825177041c8f0d699038e",
+  "archive_root": false,
+  "required_paths": [
+    "media"
+  ],
+  "binary": "out/native/GhostSquad",
+  "summary": "Experimental: attract sequence renders; gameplay validation pending",
+  "build": [
+    "tools/build_native.py",
+    "--jobs",
+    "3"
+  ],
+  "launch": [
+    "tools/run_game.py"
+  ],
+  "options": [
+    "tools/run_game.py"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "OutRun 2",
+  "archive": "Outrun 2.7z",
+  "executable": "outrun2.xbe",
+  "sha256": "d98a7efc0ee4ba48b6e938743fa309a9fc774c05713ef735e67d1b17b9bbbd1b",
+  "binary": "out/native/OutRun2",
+  "summary": "English \u00b7 original Chihiro arcade release",
+  "build": [
+    "tools/build_native.py",
+    "--jobs",
+    "4"
+  ],
+  "launch": [
+    "tools/run_game.py"
+  ],
+  "options": [
+    "tools/run_game.py"
+  ]
+}

@@ -1,0 +1,39 @@
+--- a/runtime/core/input.h
++++ b/runtime/core/input.h
+@@ -12,6 +12,8 @@
+ };
+ 
+ void Init();  // window thread, before boot
++// Call before Init to leave lower ports for a mouse or another game input.
++void SetFirstGamepadPort(int port);
+ // the controller on that port, then GameInfo::pad
+ Pad Poll(int port);
+ void Rumble(int port, uint16_t left, uint16_t right);
+--- a/runtime/core/input.cpp
++++ b/runtime/core/input.cpp
+@@ -20,11 +20,12 @@
+ bool g_sdl = false;
+ bool g_host_events = false;  // a window owns SDL's event queue (the Linux host): it hands over the device notices
+ SDL_Gamepad* g_pads[4] = {};
++int g_first_pad_port = 0;
+ 
+ void AddPad(SDL_JoystickID id) {
+     for (SDL_Gamepad* pad : g_pads)
+         if (pad && SDL_GetGamepadID(pad) == id) return;
+-    SDL_Gamepad** slot = std::find(std::begin(g_pads), std::end(g_pads), nullptr);
++    SDL_Gamepad** slot = std::find(std::begin(g_pads) + g_first_pad_port, std::end(g_pads), nullptr);
+     if (slot == std::end(g_pads)) return;
+     *slot = SDL_OpenGamepad(id);
+     const char* name = *slot ? SDL_GetGamepadName(*slot) : SDL_GetError();
+@@ -64,6 +65,11 @@
+ }
+ 
+ }  // namespace
++
++void SetFirstGamepadPort(int port) {
++    std::lock_guard lock(g_lock);
++    if (!g_sdl) g_first_pad_port = std::clamp(port, 0, 3);
++}
+ 
+ void Init() {
+     // WGI reads the triggers apart and HIDAPI takes PlayStation and Switch pads. Reads come from the guest's threads,

@@ -1,0 +1,23 @@
+{
+  "title": "The House of the Dead III",
+  "archive": "House of The Dead 3.7z",
+  "executable": "hod3xb.xbe",
+  "sha256": "89a0e7778002205c114a91bc1797291344b2afeea8b5c7d5085cce7e47dc71de",
+  "binary": "out/native/HOTD3",
+  "summary": "English \u00b7 original Chihiro arcade release",
+  "build": [
+    "tools/build_native.py",
+    "--jobs",
+    "4"
+  ],
+  "launch": [
+    "tools/run_game.py"
+  ],
+  "options": [
+    "tools/run_game.py"
+  ],
+  "required_paths": [
+    "FS",
+    "MVI"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "repository": "CrownParkComputing/Chihiro-XBERecomp",
+  "tag": "v0.1.0-preview.1",
+  "date": "2026-10-24",
+  "experimental": true,
+  "game_files_included": false,
+  "artifacts": [
+    {
+      "name": "HOTD3-Linux-x86_64.tar.gz",
+      "game": "HOTD3",
+      "size": 18622441,
+      "sha256": "cd3c08f54da5b9e1ebef9abeb3d80506c3bdae17356fb43e0f70210823123298"
+    },
+    {
+      "name": "HOTD3-Android-arm64.apk",
+      "game": "HOTD3",
+      "size": 24105749,
+      "sha256": "d3493f2e073f562e8e161f4ca7763161318789c3721dd2dec2e27219d171ea96"
+    },
+    {
+      "name": "OutRun2-Linux-x86_64.tar.gz",
+      "game": "OutRun2",
+      "size": 19098908,
+      "sha256": "8803b1183267702c7c20e275d246e6a8683b5dc657ea309c7f5d898a20873abb"
+    },
+    {
+      "name": "OutRun2-Android-arm64.apk",
+      "game": "OutRun2",
+      "size": 26391317,
+      "sha256": "02ef8a972e71710266e04a74fa78328e9d2783ef08af882e619c9311c4528b4a"
+    },
+    {
+      "name": "VCop3-Linux-x86_64.tar.gz",
+      "game": "VCop3",
+      "size": 18470748,
+      "sha256": "b88f1626f58029cfb1732cb479f9e2924a4ade1d765b8ed028dccc7d70217b16"
+    },
+    {
+      "name": "VCop3-Android-arm64.apk",
+      "game": "VCop3",
+      "size": 23204629,
+      "sha256": "2dd9b72673e7a973b64cbf67a8b164c9cd9a0dfb0e1629c876d1fce84c714b36"
+    },
+    {
+      "name": "MaximumTune1-Linux-x86_64.tar.gz",
+      "game": "MaximumTune1",
+      "size": 18819151,
+      "sha256": "f218d8ebbf2400be607dac98e4b1673d529ba590988a037133bde64ca6bbce07"
+    },
+    {
+      "name": "MaximumTune1-Android-arm64.apk",
+      "game": "MaximumTune1",
+      "size": 24961813,
+      "sha256": "9bbf6eaac6a36229b8348e4defef86a2297ce32d05b8570ef8061cd81c850e5b"
+    },
+    {
+      "name": "MaximumTune2-Linux-x86_64.tar.gz",
+      "game": "MaximumTune2",
+      "size": 19177599,
+      "sha256": "c598e2fd18426fd26a721223eaa361d903d9b897b3a22e056f9b7fd3fefabc5d"
+    },
+    {
+      "name": "MaximumTune2-Android-arm64.apk",
+      "game": "MaximumTune2",
+      "size": 26166037,
+      "sha256": "8faf05885008692d639b95350b7a75b29abac1aced1f6cae49e386ec120b6841"
+    },
+    {
+      "name": "GhostSquad-Linux-x86_64.tar.gz",
+      "game": "GhostSquad",
+      "size": 19679812,
+      "sha256": "6f37257dbc5f50a8c1ab6016a326a771b7a7daee305589f58f9cfd945e976130"
+    },
+    {
+      "name": "GhostSquad-Android-arm64.apk",
+      "game": "GhostSquad",
+      "size": 28689173,
+      "sha256": "4d842e7faea433e620005e3d01c114363e0bab0aaf378b302bfc72a6ad2d8d96"
+    },
+    {
+      "name": "Chihiro-Screenshots.zip",
+      "size": 7680107,
+      "sha256": "0bbe922634d3cc5fdcb544973849599e14a183c14143184f1dd0208251314729"
+    }
+  ]
+}

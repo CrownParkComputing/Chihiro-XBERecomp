@@ -1,0 +1,1 @@
+XZ for Java, public domain. https://tukaani.org/xz/java.html

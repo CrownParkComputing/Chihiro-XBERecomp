@@ -1,0 +1,23 @@
+{
+  "title": "Wangan Midnight Maximum Tune 2",
+  "archive": "Maximum Tune 2 (Export).7z",
+  "executable": "V322.xbe",
+  "sha256": "ee1e11529eb053f3a1416f3dead7aa64ab6d859a5143be700883596ca9d56d96",
+  "archive_root": true,
+  "required_paths": [
+    "Data"
+  ],
+  "binary": "out/native/MaximumTune2",
+  "summary": "Experimental: boots but display remains black; gameplay unavailable",
+  "build": [
+    "tools/build_native.py",
+    "--jobs",
+    "3"
+  ],
+  "launch": [
+    "tools/run_game.py"
+  ],
+  "options": [
+    "tools/run_game.py"
+  ]
+}

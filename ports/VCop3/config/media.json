@@ -1,0 +1,11 @@
+{
+  "title": "Virtua Cop 3",
+  "archive": "Virtua Cop 3.7z",
+  "executable": "vc3.xbe",
+  "sha256": "85fcc40d1653609d905906f15beb507057089d2be61eadc36fe369827580a7c8",
+  "binary": "out/native/VCop3",
+  "summary": "English · local 1 or 2 players on one shared screen",
+  "build": ["tools/build_native.py", "--tests", "--jobs", "4"],
+  "launch": ["tools/run_game.py", "--no-menu"],
+  "options": ["tools/run_game.py", "--menu"]
+}
